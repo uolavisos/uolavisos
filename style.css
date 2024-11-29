@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+}
+
+.login-card {
+    background: white;
+    padding: 30px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.uol-logo {
+    height: 40px;
+    width: auto;
+}
+
+.description {
+    text-align: center;
+    color: #333;
+    font-size: 14px;
+    margin-bottom: 30px;
+    line-height: 1.4;
+}
+
+h2 {
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.password-group {
+    position: relative;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #F28C00;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    background: #F28C00;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.submit-btn:hover {
+    background: #E07D00;
+}
+
+.signup-text {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #333;
+}
+
+.signup-link {
+    color: #0969DA;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.security-note {
+    color: #666;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.auth-note {
+    color: #666;
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    font-size: 12px;
+}
+
+.footer-links a {
+    color: #0969DA;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.hidden {
+    display: none;
+}
+
+.email-display {
+    background: #f5f5f5;
+    padding: 12px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.edit-btn {
+    background: none;
+    border: none;
+    color: #666;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 0 8px;
+}
+
+.password-label {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 12px;
+}
+
+.show-password-btn {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: #0969DA;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.forgot-password {
+    display: block;
+    text-align: center;
+    color: #0969DA;
+    text-decoration: none;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
